@@ -12,3 +12,35 @@ GitLab Runner: Familiarize ourself with GitLab Runner, which is a build instance
 Using Amazon Linux 2023 ARM64 AMI 
 The yum package manager is used instead of apt-get (as Amazon Linux uses yum by default).
 Downloading and installing the ARM64 version of GitLab Runner.
+
+Step 3: Configure the Group Runner
+You'll create two separate runners, one for Docker and one for Shell.
+
+Runner for Docker
+Click on New group runner.
+Enter a Runner Description: e.g., Docker Runner.
+Tags: Enter docker to specify jobs that the runner can run.
+Run untagged jobs: Check this option if you want the runner to run jobs without tags.
+Configuration:
+Paused: Leave unchecked (unless you want to pause it for initial setup).
+Protected: Check this box if you only want it to run for protected branches.
+Maximum job timeout: Set a timeout (e.g., 3600 for 1 hour).
+Click on Create Runner to save.
+Runner for Shell
+Click on New group runner again.
+Enter a Runner Description: e.g., Shell Runner.
+Tags: Enter shell to specify jobs that the runner can run.
+Run untagged jobs: Check this option if you want the runner to run jobs without tags.
+Configuration:
+Paused: Leave unchecked (unless you want to pause it for initial setup).
+Protected: Check this box if you only want it to run for protected branches.
+Maximum job timeout: Set a timeout (e.g., 3600 for 1 hour).
+Click on Create Runner to save.
+Step 4: Register Runners
+After creating the runners, you'll need to register them. Follow these steps:
+
+Open your terminal (SSH into the server where you want to install the runner).
+
+Install GitLab Runner by following the official documentation.
+
+Once GitLab Runner is installed, register each runner:
