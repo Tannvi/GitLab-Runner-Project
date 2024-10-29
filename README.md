@@ -44,3 +44,4 @@ Open your terminal (SSH into the server where you want to install the runner).
 Install GitLab Runner by following the official documentation.
 
 Once GitLab Runner is installed, register each runner:
+![image](https://github.com/user-attachments/assets/c48d1a7f-d772-47a0-85fd-40774dfc0748)
