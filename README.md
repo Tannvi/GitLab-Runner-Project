@@ -9,3 +9,6 @@ GitLab Premium Account: Take a GitLab Premium subscription and admin access to t
 AWS EC2 Instance: Create an AWS EC2 instance to act as the GitLab Runner.
 GitLab Runner: Familiarize ourself with GitLab Runner, which is a build instance (Docker, VM, etc.) that GitLab CI/CD uses to run jobs.
 
+Using Amazon Linux 2023 ARM64 AMI 
+The yum package manager is used instead of apt-get (as Amazon Linux uses yum by default).
+Downloading and installing the ARM64 version of GitLab Runner.
