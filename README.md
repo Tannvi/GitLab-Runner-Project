@@ -45,3 +45,6 @@ Install GitLab Runner by following the official documentation.
 
 Once GitLab Runner is installed, register each runner:
 ![image](https://github.com/user-attachments/assets/c48d1a7f-d772-47a0-85fd-40774dfc0748)
+
+![image](https://github.com/user-attachments/assets/9701d437-0273-4cc7-aa3d-4ccb446e423a)
+
